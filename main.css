@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header,
+section h2,
+section h3, button {
+    font-family: 'Bungee', sans-serif;
+    font-weight: normal;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    padding: 16px 0;
+    background-color: #184fe7;
+    color: #FFF;
+}
+
+header h1 {
+    font-style: italic;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 18;
+}
+
+header nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav li a:hover{
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container h2 {
+    font-style: italic;
+}
+
+header .container,
+section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.brands-list img {
+    height: 24px;
+}
+
+.brands-list li {
+    display: inline;
+    margin-right: 8px;
+}
+
+section .container {
+    align-items: flex-start;
+}
+
+section {
+    padding: 24px 0;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+section p {
+    margin-bottom: 8px;
+}
+
+.store-front {
+    margin-right: 32px;
+}
+
+section img {
+    width: 420px;
+}
+
+section,
+a  {
+    margin-bottom: 16px;
+    color: #184fe7;
+    text-decoration: none;
+}
+
+section p {
+    color: black;
+    margin-top: 20px;
+}
+
+hr {
+    border-color: #184fe7;
+}
+
+footer {
+    background-color: #182C61;
+    color: #ecf0f1;
+    padding: 16px 0;
+    text-align: center;
+}
+
+.produto {
+    display:inline-flex;
+    width: 250px;
+    height: 100%;
+    margin-left: 25px;
+}
+
+h2 {
+    font-family: 'Bungee', sans-serif;
+    color: #184fe7;
+}
+
+.produto img {
+    width: 200px;
+    width: 100%;
+} 
+
+.produto h3 {
+    color: black;
+    font-family: 'Roboto';
+    font-weight: bolder;
+    margin: 8px 0;
+    width: 100%;
+}
+
+.produto p {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.produto button {
+    font-family: 'Roboto';
+    background-color: #184fe7;
+    color: #fff ;
+    padding: 8px;
+    margin: 5px;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.produto button:hover {
+    background-color: #01268b;
+}
+
+footer {
+    background-color: #184fe7;
+}
+
+@media screen and (max-width: 640px){
+    section .container {
+        display: block;
+    }
+
+    .container {
+        align-items: center;
+        max-width: 90%;
+    }
+
+    .container > img {
+        width: 330px;
+    }
+
+    header div.container {
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    #produtos img {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+    }
+
+    h1 {
+        margin-left: 210px;
+        font-size: 3em;
+    }
+
+    header a {
+        margin-left: 135px;
+        font-size: 20px;
+    }
+
+    div.container {
+        display: block;
+    }
+
+    div.container > img {
+        width: 730px;
+    }
+
+    div p {
+        font-size: 25px;
+    }
+
+}
